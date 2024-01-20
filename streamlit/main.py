@@ -39,6 +39,10 @@ die Verhaltensregeln in der Öffentlichkeit anzupassen."""
 std = st.text_area("Standard Version", example_std, height=100)
 easy = st.text_area("Simplified Version", example_easy, height=130)
 
+st.caption("""The example text is cited from: Langnickel, Lisa and Baum, Roman and Darms, Johannes and
+ Madan, Sumit and Fluck, Juliane. COVID-19 preVIEW: Semantic Search to Explore COVID-19 Research 
+ Preprints. 2021. DOI: 10.3233/SHTI210124""")
+
 if st.button("Evaluate Simplification"):
 
     result_part0 = []

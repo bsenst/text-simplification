@@ -31,10 +31,25 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://127.0.0.1:5000/predict
 ```
 
+This example text is cited from:
+> Langnickel, Lisa and Baum, Roman and Darms, Johannes and Madan, Sumit and Fluck, Juliane. COVID-19 preVIEW: Semantic Search to Explore COVID-19 Research Preprints. 2021. DOI: 10.3233/SHTI210124
+
 ## Model Deployment with Streamlit
 
 `(.env) $ python -m streamlit run streamlit/main.py`
 
-## Containerization
+## Containerization Flask
+
+`(.env) $ docker build -t flask-app -f Dockerfile_Flask .`
+
+`(.env) $ docker run -p 5000:5000 flask-app`
+
+## Containerization Streamlit
+
+`(.env) $ docker build -t streamlit-app -f Dockerfile_Streamlit .`
+
+`(.env) $ docker run -p 8501:8501 streamlit-app`
 
 ## Cloud Deployment
+
+https://text-simplification-evaluation.streamlit.app/
