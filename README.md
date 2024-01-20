@@ -10,11 +10,30 @@ In today's digital age, information accessibility is of paramount importance. Ho
 
 ## Exporting Model to Script
 
-## Reproducibility
+## Reproducibility, Dependencies & Environment Management
 
-## Model Deployment
+`$ python -m venv .env`
 
-## Dependency & Environment Management
+`$ source .env/bin/activate`
+
+`(.env) $ pip install -r requirements.txt`
+
+## Model Deployment with Flask
+
+`(.env) $ python flask/app.py`
+
+```
+curl -X POST -H "Content-Type: application/json" -d '{
+  "examples": [
+    "Während der aktuellen COVID-19-Pandemie ist die schnelle Verfügbarkeit fundierter Informationen von entscheidender Bedeutung, um Informationen über Diagnose, Krankheitsverlauf, Behandlung abzuleiten oder die Verhaltensregeln in der Öffentlichkeit anzupassen.",
+    "Während der aktuellen COVID-19-Pandemie ist es wichtig, dass wir schnell an fundierte Informationen gelangen können. Diese Informationen sind entscheidend, um mehr über die Diagnose, den Krankheitsverlauf und die Behandlung zu erfahren. Außerdem helfen sie dabei, die Verhaltensregeln in der Öffentlichkeit anzupassen."
+  ]
+}' http://127.0.0.1:5000/predict
+```
+
+## Model Deployment with Streamlit
+
+`(.env) $ python -m streamlit run streamlit/main.py`
 
 ## Containerization
 
