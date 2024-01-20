@@ -77,7 +77,7 @@ https://text-simplification-evaluation.streamlit.app/
 
 ## References
 
-The example text was translated with ChatGPT into easy language originally is cited from:
+The example text that was translated with ChatGPT into easy language originally is cited from:
 > Langnickel, Lisa and Baum, Roman and Darms, Johannes and Madan, Sumit and Fluck, Juliane. COVID-19 preVIEW: Semantic Search to Explore COVID-19 Research Preprints. 2021. DOI: 10.3233/SHTI210124
 
 The model was trained on the parallel corpus from:
